@@ -17,19 +17,14 @@
     }
     .section {
       padding: 0;
+      margin: 0;
     }
-    /* The container for both forms with no gap */
+    /* Full-width container for the forms */
     .highlight-section {
       background-color: #E4D00A;
       padding: 20px;
-      margin: 20px auto;
-      max-width: 800px;
-      border-radius: 10px;
-    }
-    /* Remove extra margins between inner elements */
-    .no-gap {
-      margin: 0;
-      padding: 0;
+      width: 100%;
+      box-sizing: border-box;
     }
     img {
       width: 100%;
@@ -50,41 +45,47 @@
       margin: 10px 0;
       padding: 10px;
       width: 80%;
-      max-width: 500px;
+      max-width: 600px;
       border: 1px solid #ccc;
       border-radius: 5px;
       font-family: 'Open Sans', Arial, sans-serif;
     }
-    /* Button styling that blends with the citrine background */
+    /* Harmonious button styling */
     button {
       padding: 10px 20px;
-      background-color: #E4D00A;
-      color: #333;
-      border: 2px solid #ccc;
+      background-color: #C09E00; /* A harmonious darker shade */
+      color: #fff;
+      border: none;
       border-radius: 8px;
       cursor: pointer;
       transition: background 0.3s ease;
       font-family: 'Open Sans', Arial, sans-serif;
+      margin-top: 10px;
     }
     button:hover {
-      background-color: #d3b600; /* a slightly darker shade */
+      background-color: #A88F00;
+    }
+    /* Remove gap between form sections */
+    .combined-forms {
+      margin: 0;
+      padding: 0;
     }
   </style>
 </head>
 <body>
 
-  <!-- First Image: Back.jpeg -->
+  <!-- First Image: Back.jpg -->
   <div class="section">
-    <img src="images/Back.jpeg" alt="Image1">
+    <img src="./images/Back.jpg" alt="Background Image">
   </div>
 
-  <!-- Second Image: Peach.jpeg -->
+  <!-- Second Image: Peach.jpg -->
   <div class="section">
-    <img src="images/Peach.jpeg" alt="Image2">
+    <img src="./images/Peach.jpg" alt="Peach Image">
   </div>
 
-  <!-- Combined Email Sign-Up and Comment Section (no gap) -->
-  <div class="highlight-section no-gap">
+  <!-- Combined Email Sign-Up and Comment Section (full width, no gap) -->
+  <div class="highlight-section combined-forms">
     <!-- Email Sign-Up Section -->
     <h2>Join the community</h2>
     <form action="https://formspree.io/f/xgvozazk" method="POST">
