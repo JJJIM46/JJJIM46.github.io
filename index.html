@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coming Soon</title>
+  <!-- Include Open Sans from Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
   <style>
+    /* Use Open Sans with Arial fallback */
     body {
-      font-family: 'Open Sans', sans-serif;
-    }
-  </style>
-</head>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coming Soon</title>
-  <style>
-    /* Use Helvetica with Arial and sans-serif as fallbacks */
-    body {
-      font-family: Helvetica, Arial, sans-serif;
+      font-family: 'Open Sans', Arial, sans-serif;
       margin: 0;
       padding: 0;
       text-align: center;
       background-color: #f4f4f4;
     }
     .section {
-      padding: 20px;
+      padding: 0;
     }
+    /* The container for both forms with no gap */
     .highlight-section {
       background-color: #E4D00A;
       padding: 20px;
@@ -31,18 +26,25 @@
       max-width: 800px;
       border-radius: 10px;
     }
+    /* Remove extra margins between inner elements */
+    .no-gap {
+      margin: 0;
+      padding: 0;
+    }
     img {
       width: 100%;
       height: auto;
       display: block;
     }
     h2 {
-      margin: 0 0 10px;
+      margin: 10px 0;
+      font-weight: 600;
     }
     form {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin: 0;
     }
     input[type="email"], textarea {
       margin: 10px 0;
@@ -51,22 +53,21 @@
       max-width: 500px;
       border: 1px solid #ccc;
       border-radius: 5px;
-      font-family: Helvetica, Arial, sans-serif;
+      font-family: 'Open Sans', Arial, sans-serif;
     }
-    /* Improved button styling */
+    /* Button styling that blends with the citrine background */
     button {
       padding: 10px 20px;
-      background: linear-gradient(135deg, #ff8c00, #ff6600);
-      color: #fff;
-      border: none;
+      background-color: #E4D00A;
+      color: #333;
+      border: 2px solid #ccc;
       border-radius: 8px;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
       cursor: pointer;
       transition: background 0.3s ease;
-      font-family: Helvetica, Arial, sans-serif;
+      font-family: 'Open Sans', Arial, sans-serif;
     }
     button:hover {
-      background: linear-gradient(135deg, #ff9900, #ff7700);
+      background-color: #d3b600; /* a slightly darker shade */
     }
   </style>
 </head>
@@ -74,25 +75,23 @@
 
   <!-- First Image: Back.jpeg -->
   <div class="section">
-    <img src="images/Back.jpeg">
+    <img src="images/Back.jpeg" alt="Background Image">
   </div>
 
   <!-- Second Image: Peach.jpeg -->
   <div class="section">
-    <img src="images/Peach.jpeg">
+    <img src="images/Peach.jpeg" alt="Peach Image">
   </div>
 
-  <!-- Email Sign-Up Section -->
-  <div class="highlight-section">
+  <!-- Combined Email Sign-Up and Comment Section (no gap) -->
+  <div class="highlight-section no-gap">
+    <!-- Email Sign-Up Section -->
     <h2>Join the community</h2>
     <form action="https://formspree.io/f/xgvozazk" method="POST">
       <input type="email" name="email" placeholder="Enter your email" required>
       <button type="submit">Subscribe</button>
     </form>
-  </div>
-
-  <!-- Comments Section -->
-  <div class="highlight-section">
+    <!-- Comment Section -->
     <form action="https://formspree.io/f/xgvozazk" method="POST">
       <textarea name="message" rows="5" placeholder="We want to hear from you..." required></textarea>
       <button type="submit">Send Message</button>
