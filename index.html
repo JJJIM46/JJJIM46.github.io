@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coming Soon</title>
   <style>
-    /* Set font to Helvetica only */
+    /* Use Helvetica with Arial and sans-serif as fallbacks */
     body {
-      font-family: Helvetica, sans-serif;
+      font-family: Helvetica, Arial, sans-serif;
       margin: 0;
       padding: 0;
       text-align: center;
@@ -43,21 +43,22 @@
       max-width: 500px;
       border: 1px solid #ccc;
       border-radius: 5px;
-      font-family: Helvetica, sans-serif;
+      font-family: Helvetica, Arial, sans-serif;
     }
-    /* Style buttons to be more appealing */
+    /* Improved button styling */
     button {
       padding: 10px 20px;
-      background: linear-gradient(135deg, #555, #333);
+      background: linear-gradient(135deg, #ff8c00, #ff6600);
       color: #fff;
       border: none;
       border-radius: 8px;
       box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
       cursor: pointer;
       transition: background 0.3s ease;
+      font-family: Helvetica, Arial, sans-serif;
     }
     button:hover {
-      background: linear-gradient(135deg, #666, #444);
+      background: linear-gradient(135deg, #ff9900, #ff7700);
     }
   </style>
 </head>
@@ -65,15 +66,15 @@
 
   <!-- First Image: Back.jpeg -->
   <div class="section">
-    <img src="images/Back.jpeg" alt="Background Image">
+    <img src="images/Back.jpeg">
   </div>
 
   <!-- Second Image: Peach.jpeg -->
   <div class="section">
-    <img src="images/Peach.jpeg" alt="Peach Image">
+    <img src="images/Peach.jpeg">
   </div>
 
-  <!-- Email Sign-Up Section with background color and updated text -->
+  <!-- Email Sign-Up Section -->
   <div class="highlight-section">
     <h2>Join the community</h2>
     <form action="https://formspree.io/f/xgvozazk" method="POST">
@@ -82,7 +83,7 @@
     </form>
   </div>
 
-  <!-- Comments Section: Get in Touch without a header -->
+  <!-- Comments Section -->
   <div class="highlight-section">
     <form action="https://formspree.io/f/xgvozazk" method="POST">
       <textarea name="message" rows="5" placeholder="We want to hear from you..." required></textarea>
