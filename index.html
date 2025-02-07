@@ -22,12 +22,14 @@
       margin: 0;
       padding: 0;
     }
-    /* Increase space between Peach.jpg and sign-up section */
+    /* Add extra space after the Peach image */
+    .peach-section {
+      margin-bottom: 150px; /* Increase this value if you need even more gap */
+    }
     .highlight-section {
       background-color: #E4D00A;
       width: 100%;
       box-sizing: border-box;
-      margin-top: 100px; /* More space from Peach.jpg */
       padding-top: 20px;
       padding-bottom: 40px;
     }
@@ -35,12 +37,10 @@
       width: 100%;
       height: auto;
       display: block;
-      margin: 0;
-      padding: 0;
     }
-    /* Make the heading larger, white, and reduce bottom margin */
+    /* "Join the community" text: white, bold, and large */
     h2 {
-      margin: 0 0 5px 0; /* No top margin, small bottom margin */
+      margin: 20px 0 5px 0; /* Top margin 20px; bottom margin 5px */
       font-weight: bold;
       color: #fff;
       font-size: 3em;
@@ -49,7 +49,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 0;
     }
     input[type="email"], textarea {
       margin: 15px 0;
@@ -68,10 +67,10 @@
       border-radius: 8px;
       cursor: pointer;
       transition: background 0.3s ease;
-      font-family: 'Open Sans', Arial, sans-serif;
       margin-top: 15px;
       margin-bottom: 25px;
       font-size: 1.1em;
+      font-family: 'Open Sans', Arial, sans-serif;
     }
     button:hover {
       background-color: #A88F00;
@@ -87,12 +86,12 @@
   <div class="section">
     <img src="./images/Back.jpg" alt="Background Image">
   </div>
-
-  <!-- Second Image: Peach.jpg -->
-  <div class="section">
+  
+  <!-- Second Image: Peach.jpg with extra gap below -->
+  <div class="section peach-section">
     <img src="./images/Peach.jpg" alt="Peach Image">
   </div>
-
+  
   <!-- Combined Email Sign-Up and Comment Section -->
   <div class="highlight-section combined-forms">
     <h2>Join the community</h2>
