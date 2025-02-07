@@ -16,19 +16,22 @@
     body {
       font-family: 'Open Sans', Arial, sans-serif;
       text-align: center;
-      background-color: #f4f4f4;
+      background-color: #E4D00A; /* Set default background to citrine */
     }
     .section {
       margin: 0;
       padding: 0;
     }
-    /* The highlight section now extends from below the image with extra top padding */
+    /* Add citrine background to peach image container */
+    .section:nth-of-type(2) {
+      background-color: #E4D00A;
+    }
     .highlight-section {
       background-color: #E4D00A;
       width: 100%;
       box-sizing: border-box;
-      padding-top: 40px;  /* Extra space below the peach image */
-      padding-bottom: 20px;
+      padding-top: 80px;  /* Increased space below the peach image */
+      padding-bottom: 40px;
     }
     img {
       width: 100%;
@@ -38,10 +41,10 @@
       padding: 0;
     }
     h2 {
-      margin: 10px 0;
+      margin: 20px 0;
       font-weight: bold;
-      color: #fff;         /* White text */
-      font-size: 2em;      /* Larger text */
+      color: #fff;
+      font-size: 3em;      /* Increased text size */
     }
     form {
       display: flex;
@@ -50,8 +53,8 @@
       margin: 0;
     }
     input[type="email"], textarea {
-      margin: 10px 0;
-      padding: 10px;
+      margin: 15px 0;
+      padding: 12px;
       width: 80%;
       max-width: 600px;
       border: 1px solid #ccc;
@@ -59,7 +62,7 @@
       font-family: 'Open Sans', Arial, sans-serif;
     }
     button {
-      padding: 10px 20px;
+      padding: 12px 24px;
       background-color: #C09E00;
       color: #fff;
       border: none;
@@ -67,8 +70,9 @@
       cursor: pointer;
       transition: background 0.3s ease;
       font-family: 'Open Sans', Arial, sans-serif;
-      margin-top: 10px;
-      margin-bottom: 20px;
+      margin-top: 15px;
+      margin-bottom: 25px;
+      font-size: 1.1em;
     }
     button:hover {
       background-color: #A88F00;
@@ -85,7 +89,7 @@
     <img src="./images/Back.jpg" alt="Background Image">
   </div>
 
-  <!-- Second Image: Peach.jpg -->
+  <!-- Second Image: Peach.jpg with citrine background -->
   <div class="section">
     <img src="./images/Peach.jpg" alt="Peach Image">
   </div>
