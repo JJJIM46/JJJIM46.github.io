@@ -4,10 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Coming Soon</title>
-  <!-- Include Open Sans from Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
   <style>
-    /* Reset margins and paddings */
     * {
       margin: 0;
       padding: 0;
@@ -16,35 +14,33 @@
     body {
       font-family: 'Open Sans', Arial, sans-serif;
       text-align: center;
-      background-color: #E4D00A; /* Set default background to citrine */
+      background-color: #E4D00A;
     }
     .section {
       margin: 0;
       padding: 0;
     }
-    /* Add citrine background to peach image container */
     .section:nth-of-type(2) {
       background-color: #E4D00A;
     }
     .highlight-section {
       background-color: #E4D00A;
       width: 100%;
-      box-sizing: border-box;
-      padding-top: 80px;  /* Increased space below the peach image */
+      padding-top: 140px;  /* Increased space above the heading */
       padding-bottom: 40px;
     }
     img {
       width: 100%;
       height: auto;
       display: block;
-      margin: 0;
-      padding: 0;
     }
     h2 {
-      margin: 20px 0;
+      margin: 0 0 15px 0;  /* Reduced bottom margin */
       font-weight: bold;
       color: #fff;
-      font-size: 3em;      /* Increased text size */
+      font-size: 3.5em;    /* Slightly larger text */
+      position: relative;
+      top: -20px;          /* Pull heading slightly upward */
     }
     form {
       display: flex;
@@ -53,7 +49,7 @@
       margin: 0;
     }
     input[type="email"], textarea {
-      margin: 15px 0;
+      margin: 10px 0;      /* Adjusted margins */
       padding: 12px;
       width: 80%;
       max-width: 600px;
@@ -84,17 +80,14 @@
   </style>
 </head>
 <body>
-  <!-- First Image: Back.jpg -->
   <div class="section">
     <img src="./images/Back.jpg" alt="Background Image">
   </div>
 
-  <!-- Second Image: Peach.jpg with citrine background -->
   <div class="section">
     <img src="./images/Peach.jpg" alt="Peach Image">
   </div>
 
-  <!-- Combined Email Sign-Up and Comment Section with Citrine Background -->
   <div class="highlight-section combined-forms">
     <h2>Join the community</h2>
     <form action="https://formspree.io/f/xgvozazk" method="POST">
