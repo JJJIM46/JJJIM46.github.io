@@ -7,6 +7,7 @@
   <!-- Include Open Sans from Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
   <style>
+    /* Reset margins and paddings */
     * {
       margin: 0;
       padding: 0;
@@ -18,14 +19,16 @@
       background-color: #f4f4f4;
     }
     .section {
-      padding: 0;
       margin: 0;
+      padding: 0;
     }
+    /* The highlight section now extends from below the image with extra top padding */
     .highlight-section {
       background-color: #E4D00A;
-      padding: 20px;
       width: 100%;
       box-sizing: border-box;
+      padding-top: 40px;  /* Extra space below the peach image */
+      padding-bottom: 20px;
     }
     img {
       width: 100%;
@@ -36,9 +39,9 @@
     }
     h2 {
       margin: 10px 0;
-      font-weight: 600;
-      color: #fff; /* Set text color to white */
-      font-weight: bold; /* Make text bold */
+      font-weight: bold;
+      color: #fff;         /* White text */
+      font-size: 2em;      /* Larger text */
     }
     form {
       display: flex;
@@ -77,7 +80,6 @@
   </style>
 </head>
 <body>
-
   <!-- First Image: Back.jpg -->
   <div class="section">
     <img src="./images/Back.jpg" alt="Background Image">
@@ -88,20 +90,17 @@
     <img src="./images/Peach.jpg" alt="Peach Image">
   </div>
 
-  <!-- Combined Email Sign-Up and Comment Section -->
+  <!-- Combined Email Sign-Up and Comment Section with Citrine Background -->
   <div class="highlight-section combined-forms">
-    <!-- Email Sign-Up Section -->
     <h2>Join the community</h2>
     <form action="https://formspree.io/f/xgvozazk" method="POST">
       <input type="email" name="email" placeholder="Enter your email" required>
       <button type="submit">Subscribe</button>
     </form>
-    <!-- Comment Section -->
     <form action="https://formspree.io/f/xgvozazk" method="POST">
       <textarea name="message" rows="5" placeholder="We want to hear from you..." required></textarea>
       <button type="submit">Send Message</button>
     </form>
   </div>
-
 </body>
 </html>
